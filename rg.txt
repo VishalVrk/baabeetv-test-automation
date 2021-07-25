@@ -1,0 +1,221 @@
+ /* ==== Test Created with Cypress Studio ==== */
+    // it('Student Login', function() {
+    //   /* ==== Generated with Cypress Studio ==== */
+    //   cy.visit('https://dev--ecstatic-austin-47718a.netlify.app/');
+    //   cy.get('#field-1').clear();
+    //   cy.get('#field-1').type('vishalvrk971@gmail.com');
+    //   cy.get('#field-2').clear();
+    //   cy.get('#field-2').type('Hellotest@123');
+    //   cy.get('.css-lj9e52').click();
+
+    //   // Validation
+    //   cy.wait(10000);
+
+
+    //   // Dashboard
+    //   cy.get('.css-vz7deu > :nth-child(3) > .chakra-heading').should('have.text', 'Dashboard').then($button => {
+    //       $button.css('border', '1px solid magenta')
+    //     })
+    //   cy.get(':nth-child(4) > .chakra-heading').should('have.text', 'Welcome Vishal Vaitheeswaran').then($button => {
+    //       $button.css('border', '1px solid magenta')
+    //     })
+    //   cy.get('.css-vz7deu > .css-1kglu9v > :nth-child(1)').then($button => {
+    //       $button.css('border', '1px solid magenta')
+    //     })
+    //   cy.get('.css-vz7deu > .css-1kglu9v > :nth-child(2)').then($button => {
+    //       $button.css('border', '1px solid magenta')
+    //     })
+    //   cy.get('.css-vz7deu > .chakra-button').should('have.text', 'View my Classes').then($button => {
+    //       $button.css('border', '1px solid magenta')
+    //     })
+
+
+    //   // Exploring classes
+    //   cy.contains('Expiring Courses')
+    //   cy.contains('No Expiring Courses')
+
+
+    //   // Today's classes
+    //   cy.contains("Today's Class")
+    //   cy.contains('No Classes Today')
+
+    //   // Learning Streak
+    //   cy.contains('Learning Streak')
+
+    //   // Announcements 
+    //   cy.contains('Announcements')
+    //   cy.contains('No Announcements')
+
+    //   // Refer A Friend
+    //   cy.contains('Refer A Friend')
+    //   cy.contains('Refer a friend and you can get 10% off on your next month’s fee')
+    //   cy.get('.chakra-input').should('be.visible');
+    //   cy.get('.chakra-stack > .chakra-button').should('have.text', 'Copy Link')
+
+
+    //   // Leader Board
+    //   cy.contains('Baabee Leaderboard')
+
+
+    //   // Suggested Courses
+    //   cy.contains('Suggested Courses')
+    //   cy.get('.chakra-link > .chakra-button').should('have.text', 'View More')
+
+    //   // View My Classes
+    //   cy.get('.css-vz7deu > .chakra-button').click();
+    //   cy.wait(10000);
+    //   cy.contains('My Classes')
+    //   cy.contains('Suggested Courses')
+    //   //   cy.get('#tabs-95--tab-0').should('have.text', 'Upcoming Classes')
+    //   //   cy.get('#tabs-95--tab-1').should('have.text', 'Completed Classes')
+    //   cy.contains('Upcoming Classes')
+    //   cy.contains('Completed Classes')
+    //   cy.contains('There are no upcoming classes')
+    //   cy.contains('Completed Classes').click()
+    //   cy.contains('There are no completed classes')
+
+    //   // Refer A Friend
+    //   cy.contains('Refer A Friend')
+    //   cy.contains('Refer a friend and you can get 10% off on your next month’s fee')
+    //   cy.get('.chakra-input').should('be.visible');
+    //   cy.get('.chakra-stack > .chakra-button').should('have.text', 'Copy Link')
+
+    //   // Suggested Courses
+    //   cy.contains('Suggested Courses')
+    //   cy.get('.chakra-link > .chakra-button').should('have.text', 'View More')
+
+    //   // Reschedule Requests
+    //   cy.contains('Reschedule Requests')
+    //   cy.contains('Requests By Teacher')
+    //   cy.contains('Requests By Teacher').click()
+    //   cy.contains('There are no rescheduled requests by teachers')
+    //   cy.contains('Requests By You')
+    //   cy.contains('Requests By You').click()
+    //   cy.contains('There are no rescheduled requests by you')
+
+    //   //   Should Navigate to baabeetv.com
+    //   cy.xpath("//a[contains(@class,'chakra-link')]").should('have.text', 'View More').invoke('removeAttr','target').click()
+    //   cy.url().should('eq', 'https://www.baabeetv.com/')
+
+    //   cy.go('back')
+    //   cy.get('.css-1cmb0i7 > :nth-child(4) > .chakra-stack').trigger('mouseover')
+    //   cy.get('.css-1cmb0i7 > :nth-child(4) > .chakra-stack > .css-1403771 > .css-1l7gpd').click();
+    //   cy.wait(5000);
+    //   //   cy.get('.css-1cmb0i7 > :nth-child(4) > .chakra-stack > .css-1403771 > .css-1l7gpd')
+    //   cy.get('.chakra-wrap__list > :nth-child(1) > .chakra-heading').should('have.text', 'Settings')
+    //   cy.get('.css-1qvrtv4 > picture > img')
+    //   cy.get('.css-1vp6h26').should('have.text', 'Vishal')
+
+    //   cy.contains('Account')
+    //   cy.contains('Edit and manage your account details')
+    //   cy.contains('Badges earned').click()
+    //   cy.contains('Congratulations on earning these badges')
+
+    //   //   cy.contains('Top 10 Finisher')
+    //   //   cy.contains('Tournament Winner')
+    //   cy.contains('BaaBee Points')
+    //   cy.get('.chakra-stack > .chakra-button').should('have.text', 'Log Out')
+    //   //   cy.contains('KID')
+    //   //   cy.contains('PARENT')
+
+
+    //   //   Settings Page validation
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'Name')])[1]")
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'Name')])[1]//following::p[1]").should('have.text', 'Vishal Vaitheeswaran')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'Date of Birth')])[1]//following::p[1]").should('have.text', 'April 20, 1997')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'Age')])[1]//following::p[1]").should('have.text', '24')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'Phone')])[1]//following::p[1]").should('have.text', '+91 8667428082')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'School')])[1]//following::p[1]").should('have.text', 'SBOA')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'Email')])[1]//following::p[1]").should('have.text', 'vishalvrk971@gmail.com')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Vishal') ]//following::p[contains(text(),'City')])[1]//following::p[1]").should('have.text', 'Chennai')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Boopesh') ]//following::p[contains(text(),'Name')])[1]//following::p[1]").should('have.text', 'Boopesh Mahendran')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Boopesh') ]//following::p[contains(text(),'Relation')])[1]//following::p[1]").should('have.text', 'Father')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Boopesh') ]//following::p[contains(text(),'Phone')])[1]//following::p[1]").should('have.text', '+91 9629526838')
+    //   cy.xpath("(//h2[contains(@class,'chakra-heading') and contains(text(),'Boopesh') ]//following::p[contains(text(),'Email')])[1]//following::p[1]").should('have.text', 'boopesh2272@gmail.com')
+      
+
+
+    //   cy.get('.css-1cmb0i7 > :nth-child(5) > .chakra-stack').click();
+    //   cy.get('.css-1cmb0i7 > :nth-child(5) > .chakra-stack > .chakra-heading').click();
+    //   cy.contains('You are not Allowed in here')
+    //   cy.contains('This page is accessible only to parents. Please logout and login as parent to access this page.')
+    //   cy.contains('Log Out')
+      
+    //   cy.get(':nth-child(6) > .chakra-stack').click();
+    //   cy.get('.css-1idynls > .chakra-heading').should('have.text',"Homework")
+    //   cy.contains('Mastering Chess')
+    //   cy.contains('No homework')
+    // });
+
+
+    before(()=>{
+      cy.visit("https://dev--sharp-visvesvaraya-cbe343.netlify.app/login")
+      cy.get('#field-1').clear();
+      cy.get('#field-1').type('admin@gmail.com');
+      cy.get('#field-2').clear();
+      cy.get('#field-2').type('BaabeeTv123$');
+      cy.get('.css-lj9e52').click();
+      cy.get('.css-1cmb0i7 > :nth-child(7) > .chakra-stack > .chakra-heading').click();
+      cy.get('.css-1mbq1l7 > .chakra-button').click();
+
+      cy.xpath("(//label[@label='Full Name']//following::input)[1]").type('Vishal Vaitheeswaran');
+      cy.xpath("//input[@name='phone']").clear();
+      cy.xpath("//input[@name='phone']").type('8667428082');
+      cy.xpath("//input[@name='studentEmail']").clear();
+      cy.xpath("//input[@name='studentEmail']").type('vishalvrk971@gmail.com');
+      cy.xpath("//input[@name='school']").clear();
+      cy.xpath("//input[@name='school']").type('SBOA');
+      cy.xpath("//input[@name='city']").clear();
+      cy.xpath("//input[@name='city']").type('Chennai');
+      cy.get('.css-1mdhoy1 > .chakra-button').click();
+      cy.xpath("//input[@placeholder]").clear();
+      cy.xpath("//input[@placeholder]").type('Boopesh');
+      cy.get(':nth-child(1) > :nth-child(3) > .css-eqs2us').click();
+      cy.get('.chakra-stack > .css-huwc4k').click();
+      cy.xpath("//input[@name='password']").clear();
+      cy.xpath("//input[@name='password']").type('Test@1234');
+      cy.get('.css-cdjry9 > .chakra-button').click();
+      cy.get(':nth-child(1) > .chakra-form-control > .css-2b097c-container > .css-yk16xz-control > .css-1wy0on6 > .css-tlfecz-indicatorContainer').click();
+      cy.get('#react-select-4-option-1').click();
+      cy.get('.css-cdjry9 > .chakra-button').click();
+      cy.get(':nth-child(2) > .css-1rr4qq7 > :nth-child(1) > :nth-child(2) > :nth-child(1) > .chakra-form-control > .css-2b097c-container > .css-yk16xz-control > .css-1hwfws3').click();
+      cy.get('#react-select-6-option-2').click();
+      cy.get(':nth-child(1) > .css-1rr4qq7 > :nth-child(1) > :nth-child(3) > :nth-child(2) > .chakra-form-control > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').click();
+      cy.get(':nth-child(5) > :nth-child(7) > .MuiButtonBase-root > .MuiIconButton-label > .MuiTypography-root').click();
+      cy.get('.MuiDialogActions-root > :nth-child(2) > .MuiButton-label').click();
+      cy.get(':nth-child(2) > .css-1rr4qq7 > :nth-child(1) > :nth-child(3) > :nth-child(2) > .chakra-form-control > .MuiFormControl-root > .MuiInputBase-root > .MuiInputBase-input').click();
+      cy.get(':nth-child(5) > :nth-child(7) > .MuiButtonBase-root > .MuiIconButton-label').click();
+      cy.get('.MuiDialogActions-root > :nth-child(2) > .MuiButton-label').click();
+      cy.get(':nth-child(5) > .chakra-button').click();
+
+
+      cy.xpath("//input[@name='subscriptions.0.totalClass']").clear();
+      cy.xpath("//input[@name='subscriptions.0.totalClass']").type('10');
+      cy.xpath("//input[@name='subscriptions.0.classRemaining']").clear();
+      cy.xpath("//input[@name='subscriptions.0.classRemaining']").type('10');
+
+
+      cy.get(':nth-child(2) > .css-1rr4qq7 > :nth-child(1) > :nth-child(4) > :nth-child(1) > .chakra-form-control').click();
+      cy.xpath("//input[@name='subscriptions.1.totalClass']").clear();
+      cy.xpath("//input[@name='subscriptions.1.totalClass']").type('10');
+      cy.get(':nth-child(2) > .css-1rr4qq7 > :nth-child(1) > :nth-child(4) > :nth-child(2) > .chakra-form-control').click();
+      cy.xpath("//input[@name='subscriptions.1.classRemaining']").clear();
+      cy.xpath("//input[@name='subscriptions.1.classRemaining']").type('10');
+      cy.get('.css-cdjry9 > .chakra-button').click();
+      cy.get(':nth-child(3) > .chakra-button').click();
+      cy.get(':nth-child(5) > .chakra-button').click();
+    })
+
+      after(()=>{
+      cy.forceVisit('https://dev--sharp-visvesvaraya-cbe343.netlify.app')
+      cy.get('.css-1cmb0i7 > :nth-child(7) > .chakra-stack > .chakra-heading').click();
+      cy.get(':nth-child(3) > .css-aiqoiy > .css-ybhl6i').click()
+      cy.wait(2000)
+      cy.xpath("//input[@placeholder='Search...']").type('Vishal Vaitheeswaran');
+      cy.wait(2000)
+      cy.get('.css-8b0kkm > :nth-child(1)').click()
+      cy.get('.css-bm29qb > .chakra-wrap > .chakra-wrap__list > :nth-child(2) > .chakra-button').click();
+      cy.get('.css-1yt8peq').click();
+
+     
+    })

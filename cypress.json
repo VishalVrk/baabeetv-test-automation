@@ -3,5 +3,9 @@
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
       "configFile": "reporter-config.json"
-  }
+  },
+  "experimentalStudio": true,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "chromeWebSecurity": false
 }
